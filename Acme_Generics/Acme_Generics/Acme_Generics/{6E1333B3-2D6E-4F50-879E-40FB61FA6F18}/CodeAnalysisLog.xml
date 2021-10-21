@@ -1,0 +1,1230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="c:\program files (x86)\microsoft visual studio 10.0\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="10.0">
+ <Targets>
+  <Target Name="C:\Users\Dev5\AppData\Local\Temp\tmpCFD7.tmp.cadir\bin\App_Code.dll">
+   <Modules>
+    <Module Name="app_code.dll">
+     <Namespaces>
+      <Namespace Name="">
+       <Types>
+        <Type Name="clsStandards" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#CreatePRN(System.Exception,System.String,System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="ExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\App_Code" File="clsStandards.cs" Line="374">In method 'clsStandards.CreatePRN(Exception, string, string)', object 'sw' is not disposed along all exception paths. Call System.IDisposable.Dispose on object 'sw' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#fillCombobox(System.Web.UI.WebControls.DropDownList,System.Data.DataTable,System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\App_Code" File="clsStandards.cs" Line="495">In method 'clsStandards.fillCombobox(DropDownList, DataTable, string)', call System.IDisposable.Dispose on object 'dv' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#fillCombobox_Ajex(AjaxControlToolkit.ComboBox,System.Data.DataTable,System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\App_Code" File="clsStandards.cs" Line="523">In method 'clsStandards.fillCombobox_Ajex(ComboBox, DataTable, string)', call System.IDisposable.Dispose on object 'dv' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#FillMultiCheckList(System.Web.UI.WebControls.CheckBoxList,System.Data.DataTable,System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="ExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\App_Code" File="clsStandards.cs" Line="995">In method 'clsStandards.FillMultiCheckList(CheckBoxList, DataTable, string)', object 'dt1' is not disposed along all exception paths. Call System.IDisposable.Dispose on object 'dt1' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\App_Code" File="clsStandards.cs" Line="998">In method 'clsStandards.FillMultiCheckList(CheckBoxList, DataTable, string)', call System.IDisposable.Dispose on object 'dv' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#fn_Decrypt_String(System.String,System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\App_Code" File="clsStandards.cs" Line="226">In method 'clsStandards.fn_Decrypt_String(string, string)', call System.IDisposable.Dispose on object 'des' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\App_Code" File="clsStandards.cs" Line="228">In method 'clsStandards.fn_Decrypt_String(string, string)', call System.IDisposable.Dispose on object 'ms' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#fn_Encrypt_String(System.String,System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\App_Code" File="clsStandards.cs" Line="248">In method 'clsStandards.fn_Encrypt_String(string, string)', call System.IDisposable.Dispose on object 'des' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\App_Code" File="clsStandards.cs" Line="250">In method 'clsStandards.fn_Encrypt_String(string, string)', call System.IDisposable.Dispose on object 'ms' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GenerateHashKey()" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\App_Code" File="clsStandards.cs" Line="146">In method 'clsStandards.GenerateHashKey()', call System.IDisposable.Dispose on object 'sha' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Offline_Writer(System.Exception,System.String,System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="ExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\App_Code" File="clsStandards.cs" Line="476">In method 'clsStandards.Offline_Writer(Exception, string, string)', object 'sw' is not disposed along all exception paths. Call System.IDisposable.Dispose on object 'sw' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#populateGrid(System.Data.DataTable,System.Web.UI.WebControls.GridView,System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="ExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\App_Code" File="clsStandards.cs" Line="1154">In method 'clsStandards.populateGrid(DataTable, GridView, string)', object 'dv' is not disposed along all exception paths. Call System.IDisposable.Dispose on object 'dv' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="clsxlsExport" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ConvertToxls(System.Data.DataTable,System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\App_Code" File="clsxlsExport.cs" Line="35">In method 'clsxlsExport.ConvertToxls(DataTable, string)', call System.IDisposable.Dispose on object 'dt' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ExportExcel(System.Web.UI.WebControls.GridView,System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\App_Code" File="clsxlsExport.cs" Line="93">In method 'clsxlsExport.ExportExcel(GridView, string)', call System.IDisposable.Dispose on object 'sw' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ExportPDF(System.Web.UI.WebControls.GridView,System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="ExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\App_Code" File="clsxlsExport.cs" Line="144">In method 'clsxlsExport.ExportPDF(GridView, string)', object 'pdfDoc' is not disposed along all exception paths. Call System.IDisposable.Dispose on object 'pdfDoc' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\App_Code" File="clsxlsExport.cs" Line="146">In method 'clsxlsExport.ExportPDF(GridView, string)', call System.IDisposable.Dispose on object 'htmlparser' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\App_Code" File="clsxlsExport.cs" Line="143">In method 'clsxlsExport.ExportPDF(GridView, string)', call System.IDisposable.Dispose on object 'sr' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\App_Code" File="clsxlsExport.cs" Line="136">In method 'clsxlsExport.ExportPDF(GridView, string)', call System.IDisposable.Dispose on object 'sw' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ExportWord(System.Web.UI.WebControls.GridView,System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\App_Code" File="clsxlsExport.cs" Line="71">In method 'clsxlsExport.ExportWord(GridView, string)', call System.IDisposable.Dispose on object 'sw' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="PrintDirect" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ClosePrinter(System.IntPtr)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Because it is a P/Invoke method, 'PrintDirect.ClosePrinter(IntPtr)' should be defined in a class named NativeMethods, SafeNativeMethods, or UnsafeNativeMethods.</Issue>
+            </Message>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">Change the accessibility of P/Invoke 'PrintDirect.ClosePrinter(IntPtr)' so that it is no longer visible from outside its assembly.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#EndDocPrinter(System.IntPtr)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Because it is a P/Invoke method, 'PrintDirect.EndDocPrinter(IntPtr)' should be defined in a class named NativeMethods, SafeNativeMethods, or UnsafeNativeMethods.</Issue>
+            </Message>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">Change the accessibility of P/Invoke 'PrintDirect.EndDocPrinter(IntPtr)' so that it is no longer visible from outside its assembly.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#EndPagePrinter(System.IntPtr)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Because it is a P/Invoke method, 'PrintDirect.EndPagePrinter(IntPtr)' should be defined in a class named NativeMethods, SafeNativeMethods, or UnsafeNativeMethods.</Issue>
+            </Message>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">Change the accessibility of P/Invoke 'PrintDirect.EndPagePrinter(IntPtr)' so that it is no longer visible from outside its assembly.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#OpenPrinter(System.String,System.IntPtr&amp;,System.Int32)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Because it is a P/Invoke method, 'PrintDirect.OpenPrinter(string, ref IntPtr, int)' should be defined in a class named NativeMethods, SafeNativeMethods, or UnsafeNativeMethods.</Issue>
+            </Message>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">Change the accessibility of P/Invoke 'PrintDirect.OpenPrinter(string, ref IntPtr, int)' so that it is no longer visible from outside its assembly.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Print_DispenseRawLabel(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Decimal,System.Decimal,System.Decimal,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="ExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\App_Code" File="PrintDirect.cs" Line="335">In method 'PrintDirect.Print_DispenseRawLabel(string, string, string, string, string, string, string, string, string, string, string, decimal, decimal, decimal, string, string, string, string, string, string, string, string)', object 'clientSocket' is not disposed along all exception paths. Call System.IDisposable.Dispose on object 'clientSocket' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Print_Master_Barcode(System.String,System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\App_Code" File="PrintDirect.cs" Line="2800">'PrintDirect.Print_Master_Barcode(string, string)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Print_MaterialLabel(System.String,System.String,System.String,System.Data.DataTable)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="ExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\App_Code" File="PrintDirect.cs" Line="2262">In method 'PrintDirect.Print_MaterialLabel(string, string, string, DataTable)', object 'clientSocket' is not disposed along all exception paths. Call System.IDisposable.Dispose on object 'clientSocket' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Print_MaterialLabelIP(System.String,System.String,System.String,System.String,System.String,System.Data.DataTable)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="ExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\App_Code" File="PrintDirect.cs" Line="2335">In method 'PrintDirect.Print_MaterialLabelIP(string, string, string, string, string, DataTable)', object 'clientSocket' is not disposed along all exception paths. Call System.IDisposable.Dispose on object 'clientSocket' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Print_RegLabel(System.String,System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="NonBreaking">
+             <Issue Certainty="95" Level="Error" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\App_Code" File="PrintDirect.cs" Line="2762">'PrintDirect.Print_RegLabel(string, string)' rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Print_SampleLabel(System.String,System.String,System.String,System.Data.DataTable)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="ExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\App_Code" File="PrintDirect.cs" Line="2480">In method 'PrintDirect.Print_SampleLabel(string, string, string, DataTable)', object 'clientSocket' is not disposed along all exception paths. Call System.IDisposable.Dispose on object 'clientSocket' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Print_SampleLabelIP(System.String,System.String,System.String,System.String,System.String,System.Data.DataTable)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="ExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\App_Code" File="PrintDirect.cs" Line="2421">In method 'PrintDirect.Print_SampleLabelIP(string, string, string, string, string, DataTable)', object 'clientSocket' is not disposed along all exception paths. Call System.IDisposable.Dispose on object 'clientSocket' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#StartDocPrinter(System.IntPtr,System.Int32,DOCINFO&amp;)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Because it is a P/Invoke method, 'PrintDirect.StartDocPrinter(IntPtr, int, ref DOCINFO)' should be defined in a class named NativeMethods, SafeNativeMethods, or UnsafeNativeMethods.</Issue>
+            </Message>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">Change the accessibility of P/Invoke 'PrintDirect.StartDocPrinter(IntPtr, int, ref DOCINFO)' so that it is no longer visible from outside its assembly.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#StartPagePrinter(System.IntPtr)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Because it is a P/Invoke method, 'PrintDirect.StartPagePrinter(IntPtr)' should be defined in a class named NativeMethods, SafeNativeMethods, or UnsafeNativeMethods.</Issue>
+            </Message>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">Change the accessibility of P/Invoke 'PrintDirect.StartPagePrinter(IntPtr)' so that it is no longer visible from outside its assembly.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#WritePrinter(System.IntPtr,System.String,System.Int32,System.Int32&amp;)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">Because it is a P/Invoke method, 'PrintDirect.WritePrinter(IntPtr, string, int, ref int)' should be defined in a class named NativeMethods, SafeNativeMethods, or UnsafeNativeMethods.</Issue>
+            </Message>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">Change the accessibility of P/Invoke 'PrintDirect.WritePrinter(IntPtr, string, int, ref int)' so that it is no longer visible from outside its assembly.</Issue>
+            </Message>
+            <Message Id="1" TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="NonBreaking">
+             <Issue Name="ParameterImplicitAnsi" Certainty="75" Level="Error">To reduce security risk, marshal parameter 'data' as Unicode, by setting DllImport.CharSet to CharSet.Unicode, or by explicitly marshaling the parameter as UnmanagedType.LPWStr. If you need to marshal this string as ANSI or system-dependent, specify MarshalAs explicitly, and set BestFitMapping=false; for added security, also set ThrowOnUnmappableChar=true.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+  <Target Name="C:\Users\Dev5\AppData\Local\Temp\tmpCFD7.tmp.cadir\bin\App_Web_0nyco44q.dll">
+   <Modules>
+    <Module Name="app_web_0nyco44q.dll">
+     <Namespaces>
+      <Namespace Name="">
+       <Types>
+        <Type Name="frmGrn_Printing" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#btnGeneratePicklist_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Transactions" File="frmFGPicklistGeneration.aspx.cs" Line="131">In method 'frmGrn_Printing.btnGeneratePicklist_Click(object, EventArgs)', call System.IDisposable.Dispose on object 'dt' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#btnGet_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Transactions" File="frmFGPicklistGeneration.aspx.cs" Line="42">In method 'frmGrn_Printing.btnGet_Click(object, EventArgs)', call System.IDisposable.Dispose on object 'dtGrn' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+  <Target Name="C:\Users\Dev5\AppData\Local\Temp\tmpCFD7.tmp.cadir\bin\App_Web_1cwfrzb4.dll">
+   <Modules>
+    <Module Name="app_web_1cwfrzb4.dll">
+     <Namespaces>
+      <Namespace Name="">
+       <Types>
+        <Type Name="Masters_frmPrinter" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#btnImp_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Masters" File="frmPrinter.aspx.cs" Line="136">In method 'Masters_frmPrinter.btnImp_Click(object, EventArgs)', call System.IDisposable.Dispose on object 'dt' before all references to it are out of scope.</Issue>
+            </Message>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Masters" File="frmPrinter.aspx.cs" Line="163">Object 'con' can be disposed more than once in method 'Masters_frmPrinter.btnImp_Click(object, EventArgs)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 163</Issue>
+             <Issue Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Masters" File="frmPrinter.aspx.cs" Line="126">Object 'excel_con' can be disposed more than once in method 'Masters_frmPrinter.btnImp_Click(object, EventArgs)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 126</Issue>
+            </Message>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Masters" File="frmPrinter.aspx.cs" Line="137">The query string passed to 'OleDbCommand.CommandText.set(string)' in 'Masters_frmPrinter.btnImp_Click(object, EventArgs)' could contain the following variables 'dtExcelSchema.Rows[0]["TABLE_NAME"]', 'SheetName'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GrPrinter_RowCommand(System.Object,System.Web.UI.WebControls.GridViewCommandEventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Masters" File="frmPrinter.aspx.cs" Line="443">In method 'Masters_frmPrinter.GrPrinter_RowCommand(object, GridViewCommandEventArgs)', call System.IDisposable.Dispose on object 'dt' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+  <Target Name="C:\Users\Dev5\AppData\Local\Temp\tmpCFD7.tmp.cadir\bin\App_Web_50sm3gzr.dll">
+   <Modules>
+    <Module Name="app_web_50sm3gzr.dll">
+     <Namespaces>
+      <Namespace Name="">
+       <Types>
+        <Type Name="frmGrn_Printing" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#btnGet_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Transactions" File="frmGrnPrinting.aspx.cs" Line="97">In method 'frmGrn_Printing.btnGet_Click(object, EventArgs)', call System.IDisposable.Dispose on object 'dtGrn' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#btnPrint_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Transactions" File="frmGrnPrinting.aspx.cs" Line="148">In method 'frmGrn_Printing.btnPrint_Click(object, EventArgs)', call System.IDisposable.Dispose on object 'dt' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Transactions" File="frmGrnPrinting.aspx.cs" Line="141">In method 'frmGrn_Printing.btnPrint_Click(object, EventArgs)', call System.IDisposable.Dispose on object 'dtPRint' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetDocno(System.String,System.Int32,System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Transactions" File="frmGrnPrinting.aspx.cs" Line="26">In method 'frmGrn_Printing.GetDocno(string, int, string)', call System.IDisposable.Dispose on object 'dt' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Transactions" File="frmGrnPrinting.aspx.cs" Line="66">In method 'frmGrn_Printing.Page_Load(object, EventArgs)', call System.IDisposable.Dispose on object 'ds' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Transactions" File="frmGrnPrinting.aspx.cs" Line="63">In method 'frmGrn_Printing.Page_Load(object, EventArgs)', call System.IDisposable.Dispose on object 'dt' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Transactions" File="frmGrnPrinting.aspx.cs" Line="65">In method 'frmGrn_Printing.Page_Load(object, EventArgs)', call System.IDisposable.Dispose on object 'dt_AscPlant' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Transactions" File="frmGrnPrinting.aspx.cs" Line="64">In method 'frmGrn_Printing.Page_Load(object, EventArgs)', call System.IDisposable.Dispose on object 'dt_Plant' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+  <Target Name="C:\Users\Dev5\AppData\Local\Temp\tmpCFD7.tmp.cadir\bin\App_Web_5h1v1i4e.dll">
+   <Modules>
+    <Module Name="app_web_5h1v1i4e.dll">
+     <Namespaces>
+      <Namespace Name="">
+       <Types>
+        <Type Name="frmGrn_Printing" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#btnGet_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Transactions" File="frmFGLabelPrinting.aspx.cs" Line="146">In method 'frmGrn_Printing.btnGet_Click(object, EventArgs)', call System.IDisposable.Dispose on object 'dtGrn' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#btnPrint_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Transactions" File="frmFGLabelPrinting.aspx.cs" Line="179">In method 'frmGrn_Printing.btnPrint_Click(object, EventArgs)', call System.IDisposable.Dispose on object 'dtPRint' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Transactions" File="frmFGLabelPrinting.aspx.cs" Line="114">In method 'frmGrn_Printing.Page_Load(object, EventArgs)', call System.IDisposable.Dispose on object 'ds' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Transactions" File="frmFGLabelPrinting.aspx.cs" Line="111">In method 'frmGrn_Printing.Page_Load(object, EventArgs)', call System.IDisposable.Dispose on object 'dt' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Transactions" File="frmFGLabelPrinting.aspx.cs" Line="113">In method 'frmGrn_Printing.Page_Load(object, EventArgs)', call System.IDisposable.Dispose on object 'dt_AscPlant' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Transactions" File="frmFGLabelPrinting.aspx.cs" Line="112">In method 'frmGrn_Printing.Page_Load(object, EventArgs)', call System.IDisposable.Dispose on object 'dt_Plant' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+  <Target Name="C:\Users\Dev5\AppData\Local\Temp\tmpCFD7.tmp.cadir\bin\App_Web_awjw4xwj.dll">
+   <Modules>
+    <Module Name="app_web_awjw4xwj.dll">
+     <Namespaces>
+      <Namespace Name="">
+       <Types>
+        <Type Name="frmGrn_Printing" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#btnGet_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Transactions" File="frmFGLabelReprinting.aspx.cs" Line="146">In method 'frmGrn_Printing.btnGet_Click(object, EventArgs)', call System.IDisposable.Dispose on object 'dtGrn' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#btnPrint_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Transactions" File="frmFGLabelReprinting.aspx.cs" Line="175">In method 'frmGrn_Printing.btnPrint_Click(object, EventArgs)', call System.IDisposable.Dispose on object 'dtPRint' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Transactions" File="frmFGLabelReprinting.aspx.cs" Line="114">In method 'frmGrn_Printing.Page_Load(object, EventArgs)', call System.IDisposable.Dispose on object 'ds' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Transactions" File="frmFGLabelReprinting.aspx.cs" Line="111">In method 'frmGrn_Printing.Page_Load(object, EventArgs)', call System.IDisposable.Dispose on object 'dt' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Transactions" File="frmFGLabelReprinting.aspx.cs" Line="113">In method 'frmGrn_Printing.Page_Load(object, EventArgs)', call System.IDisposable.Dispose on object 'dt_AscPlant' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Transactions" File="frmFGLabelReprinting.aspx.cs" Line="112">In method 'frmGrn_Printing.Page_Load(object, EventArgs)', call System.IDisposable.Dispose on object 'dt_Plant' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+  <Target Name="C:\Users\Dev5\AppData\Local\Temp\tmpCFD7.tmp.cadir\bin\App_Web_dlvh5ris.dll">
+   <Modules>
+    <Module Name="app_web_dlvh5ris.dll">
+     <Namespaces>
+      <Namespace Name="">
+       <Types>
+        <Type Name="Login" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#AuthenticateUser(System.String,System.String,System.String,System.String,System.String&amp;)" Kind="Method" Static="False" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Modules" File="Login.aspx.cs" Line="48">In method 'Login.AuthenticateUser(string, string, string, string, out string)', call System.IDisposable.Dispose on object 'entry' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Modules" File="Login.aspx.cs" Line="53">In method 'Login.AuthenticateUser(string, string, string, string, out string)', call System.IDisposable.Dispose on object 'search' before all references to it are out of scope.</Issue>
+            </Message>
+            <Message TypeName="DoNotIndirectlyExposeMethodsWithLinkDemands" Category="Microsoft.Security" CheckId="CA2122" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="NonBreaking">
+             <Issue Certainty="33" Level="CriticalError" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Modules" File="Login.aspx.cs" Line="45">'Login.AuthenticateUser(string, string, string, string, out string)' calls into 'DirectoryEntry.NativeObject.get()' which has a LinkDemand. By making this call, 'DirectoryEntry.NativeObject.get()' is indirectly exposed to user code. Review the following call stack that might expose a way to circumvent security protection: &#xD;&#xA;   -&gt;'Login.AuthenticateUser(string, string, string, string, out string)'&#xD;&#xA;   -&gt;'Login.AuthenticateUser(string, string, string, string, out string)'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Modules" File="Login.aspx.cs" Line="45">'Login.AuthenticateUser(string, string, string, string, out string)' calls into 'DirectorySearcher.Filter.set(string)' which has a LinkDemand. By making this call, 'DirectorySearcher.Filter.set(string)' is indirectly exposed to user code. Review the following call stack that might expose a way to circumvent security protection: &#xD;&#xA;   -&gt;'Login.AuthenticateUser(string, string, string, string, out string)'&#xD;&#xA;   -&gt;'Login.AuthenticateUser(string, string, string, string, out string)'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Modules" File="Login.aspx.cs" Line="45">'Login.AuthenticateUser(string, string, string, string, out string)' calls into 'DirectorySearcher.FindOne()' which has a LinkDemand. By making this call, 'DirectorySearcher.FindOne()' is indirectly exposed to user code. Review the following call stack that might expose a way to circumvent security protection: &#xD;&#xA;   -&gt;'Login.AuthenticateUser(string, string, string, string, out string)'&#xD;&#xA;   -&gt;'Login.AuthenticateUser(string, string, string, string, out string)'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Modules" File="Login.aspx.cs" Line="45">'Login.AuthenticateUser(string, string, string, string, out string)' calls into 'DirectorySearcher.PropertiesToLoad.get()' which has a LinkDemand. By making this call, 'DirectorySearcher.PropertiesToLoad.get()' is indirectly exposed to user code. Review the following call stack that might expose a way to circumvent security protection: &#xD;&#xA;   -&gt;'Login.AuthenticateUser(string, string, string, string, out string)'&#xD;&#xA;   -&gt;'Login.AuthenticateUser(string, string, string, string, out string)'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Modules" File="Login.aspx.cs" Line="45">'Login.AuthenticateUser(string, string, string, string, out string)' calls into 'SearchResult.Path.get()' which has a LinkDemand. By making this call, 'SearchResult.Path.get()' is indirectly exposed to user code. Review the following call stack that might expose a way to circumvent security protection: &#xD;&#xA;   -&gt;'Login.AuthenticateUser(string, string, string, string, out string)'&#xD;&#xA;   -&gt;'Login.AuthenticateUser(string, string, string, string, out string)'</Issue>
+             <Issue Certainty="33" Level="CriticalError" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Modules" File="Login.aspx.cs" Line="45">'Login.AuthenticateUser(string, string, string, string, out string)' calls into 'SearchResult.Properties.get()' which has a LinkDemand. By making this call, 'SearchResult.Properties.get()' is indirectly exposed to user code. Review the following call stack that might expose a way to circumvent security protection: &#xD;&#xA;   -&gt;'Login.AuthenticateUser(string, string, string, string, out string)'&#xD;&#xA;   -&gt;'Login.AuthenticateUser(string, string, string, string, out string)'</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="MasterPage" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#btnLogout_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Modules" File="MasterPage.master.cs" Line="219">In method 'MasterPage.btnLogout_Click(object, EventArgs)', call System.IDisposable.Dispose on object 'new Page()' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#imgLogout_Click(System.Object,System.Web.UI.ImageClickEventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Modules" File="MasterPage.master.cs" Line="272">In method 'MasterPage.imgLogout_Click(object, ImageClickEventArgs)', call System.IDisposable.Dispose on object 'new Page()' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+  <Target Name="C:\Users\Dev5\AppData\Local\Temp\tmpCFD7.tmp.cadir\bin\App_Web_enrhpm2n.dll">
+   <Modules>
+    <Module Name="app_web_enrhpm2n.dll">
+     <Namespaces>
+      <Namespace Name="">
+       <Types>
+        <Type Name="frmGrn_Printing" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#btnGeneratePicklist_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Transactions" File="frmPicklistGeneration.aspx.cs" Line="131">In method 'frmGrn_Printing.btnGeneratePicklist_Click(object, EventArgs)', call System.IDisposable.Dispose on object 'dt' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#btnGet_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Transactions" File="frmPicklistGeneration.aspx.cs" Line="42">In method 'frmGrn_Printing.btnGet_Click(object, EventArgs)', call System.IDisposable.Dispose on object 'dtGrn' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+  <Target Name="C:\Users\Dev5\AppData\Local\Temp\tmpCFD7.tmp.cadir\bin\App_Web_h0nbtxc0.dll">
+   <Modules>
+    <Module Name="app_web_h0nbtxc0.dll">
+     <Namespaces>
+      <Namespace Name="">
+       <Types>
+        <Type Name="frmGrn_Printing" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#btnGo_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Transactions" File="frmSampleScanning.aspx.cs" Line="126">In method 'frmGrn_Printing.btnGo_Click(object, EventArgs)', call System.IDisposable.Dispose on object 'dtGrn' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#btnScanMaterial_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Transactions" File="frmSampleScanning.aspx.cs" Line="166">In method 'frmGrn_Printing.btnScanMaterial_Click(object, EventArgs)', call System.IDisposable.Dispose on object 'dtGrn' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+  <Target Name="C:\Users\Dev5\AppData\Local\Temp\tmpCFD7.tmp.cadir\bin\App_Web_hva1ssyw.dll">
+   <Modules>
+    <Module Name="app_web_hva1ssyw.dll">
+     <Namespaces>
+      <Namespace Name="">
+       <Types>
+        <Type Name="frmGrn_Printing" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#btnGet_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Transactions" File="frmDispensingReprinting.aspx.cs" Line="259">In method 'frmGrn_Printing.btnGet_Click(object, EventArgs)', call System.IDisposable.Dispose on object 'dtGrn' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#btnPrint_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Transactions" File="frmDispensingReprinting.aspx.cs" Line="305">In method 'frmGrn_Printing.btnPrint_Click(object, EventArgs)', call System.IDisposable.Dispose on object 'dtPrint' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#btnPrint_Click1(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Transactions" File="frmDispensingReprinting.aspx.cs" Line="564">In method 'frmGrn_Printing.btnPrint_Click1(object, EventArgs)', call System.IDisposable.Dispose on object 'dtPrint' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Button1_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Transactions" File="frmDispensingReprinting.aspx.cs" Line="173">In method 'frmGrn_Printing.Button1_Click(object, EventArgs)', call System.IDisposable.Dispose on object 'dtPrint' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetProccno(System.String,System.Int32,System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Transactions" File="frmDispensingReprinting.aspx.cs" Line="26">In method 'frmGrn_Printing.GetProccno(string, int, string)', call System.IDisposable.Dispose on object 'dt' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Transactions" File="frmDispensingReprinting.aspx.cs" Line="144">In method 'frmGrn_Printing.Page_Load(object, EventArgs)', call System.IDisposable.Dispose on object 'ds' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Transactions" File="frmDispensingReprinting.aspx.cs" Line="141">In method 'frmGrn_Printing.Page_Load(object, EventArgs)', call System.IDisposable.Dispose on object 'dt' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Transactions" File="frmDispensingReprinting.aspx.cs" Line="143">In method 'frmGrn_Printing.Page_Load(object, EventArgs)', call System.IDisposable.Dispose on object 'dt_AscPlant' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Transactions" File="frmDispensingReprinting.aspx.cs" Line="142">In method 'frmGrn_Printing.Page_Load(object, EventArgs)', call System.IDisposable.Dispose on object 'dt_Plant' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+  <Target Name="C:\Users\Dev5\AppData\Local\Temp\tmpCFD7.tmp.cadir\bin\App_Web_icp2ugf3.dll">
+   <Modules>
+    <Module Name="app_web_icp2ugf3.dll">
+     <Namespaces>
+      <Namespace Name="">
+       <Types>
+        <Type Name="frmGrn_Printing" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#btnGet_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Transactions" File="frmMRNLabelPrinting.aspx.cs" Line="146">In method 'frmGrn_Printing.btnGet_Click(object, EventArgs)', call System.IDisposable.Dispose on object 'dtGrn' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#btnPrint_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Transactions" File="frmMRNLabelPrinting.aspx.cs" Line="179">In method 'frmGrn_Printing.btnPrint_Click(object, EventArgs)', call System.IDisposable.Dispose on object 'dtPRint' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Transactions" File="frmMRNLabelPrinting.aspx.cs" Line="114">In method 'frmGrn_Printing.Page_Load(object, EventArgs)', call System.IDisposable.Dispose on object 'ds' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Transactions" File="frmMRNLabelPrinting.aspx.cs" Line="111">In method 'frmGrn_Printing.Page_Load(object, EventArgs)', call System.IDisposable.Dispose on object 'dt' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Transactions" File="frmMRNLabelPrinting.aspx.cs" Line="113">In method 'frmGrn_Printing.Page_Load(object, EventArgs)', call System.IDisposable.Dispose on object 'dt_AscPlant' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Transactions" File="frmMRNLabelPrinting.aspx.cs" Line="112">In method 'frmGrn_Printing.Page_Load(object, EventArgs)', call System.IDisposable.Dispose on object 'dt_Plant' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+  <Target Name="C:\Users\Dev5\AppData\Local\Temp\tmpCFD7.tmp.cadir\bin\App_Web_jp4s50np.dll">
+   <Modules>
+    <Module Name="app_web_jp4s50np.dll">
+     <Namespaces>
+      <Namespace Name="">
+       <Types>
+        <Type Name="frmGrn_Printing" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#btnGet_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Transactions" File="frmDispatchConfirmation.aspx.cs" Line="146">In method 'frmGrn_Printing.btnGet_Click(object, EventArgs)', call System.IDisposable.Dispose on object 'dtGrn' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Button1_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Transactions" File="frmDispatchConfirmation.aspx.cs" Line="277">In method 'frmGrn_Printing.Button1_Click(object, EventArgs)', call System.IDisposable.Dispose on object 'dtPrint' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Transactions" File="frmDispatchConfirmation.aspx.cs" Line="114">In method 'frmGrn_Printing.Page_Load(object, EventArgs)', call System.IDisposable.Dispose on object 'ds' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Transactions" File="frmDispatchConfirmation.aspx.cs" Line="111">In method 'frmGrn_Printing.Page_Load(object, EventArgs)', call System.IDisposable.Dispose on object 'dt' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Transactions" File="frmDispatchConfirmation.aspx.cs" Line="113">In method 'frmGrn_Printing.Page_Load(object, EventArgs)', call System.IDisposable.Dispose on object 'dt_AscPlant' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Transactions" File="frmDispatchConfirmation.aspx.cs" Line="112">In method 'frmGrn_Printing.Page_Load(object, EventArgs)', call System.IDisposable.Dispose on object 'dt_Plant' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+  <Target Name="C:\Users\Dev5\AppData\Local\Temp\tmpCFD7.tmp.cadir\bin\App_Web_lgdwhdfe.dll">
+   <Modules>
+    <Module Name="app_web_lgdwhdfe.dll">
+     <Namespaces>
+      <Namespace Name="">
+       <Types>
+        <Type Name="frmBin_Master" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#btnImp_Click1(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Masters" File="frmBinMaster.aspx.cs" Line="1244">In method 'frmBin_Master.btnImp_Click1(object, EventArgs)', call System.IDisposable.Dispose on object 'dt' before all references to it are out of scope.</Issue>
+            </Message>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Masters" File="frmBinMaster.aspx.cs" Line="1271">Object 'con' can be disposed more than once in method 'frmBin_Master.btnImp_Click1(object, EventArgs)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 1271</Issue>
+             <Issue Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Masters" File="frmBinMaster.aspx.cs" Line="1234">Object 'excel_con' can be disposed more than once in method 'frmBin_Master.btnImp_Click1(object, EventArgs)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 1234</Issue>
+            </Message>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Masters" File="frmBinMaster.aspx.cs" Line="1245">The query string passed to 'OleDbCommand.CommandText.set(string)' in 'frmBin_Master.btnImp_Click1(object, EventArgs)' could contain the following variables 'dtExcelSchema.Rows[0]["TABLE_NAME"]', 'SheetName'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ddlUserid_SelectedIndexChanged1(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Masters" File="frmBinMaster.aspx.cs" Line="814">In method 'frmBin_Master.ddlUserid_SelectedIndexChanged1(object, EventArgs)', call System.IDisposable.Dispose on object 'dt' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GrUser_RowCommand(System.Object,System.Web.UI.WebControls.GridViewCommandEventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Masters" File="frmBinMaster.aspx.cs" Line="550">In method 'frmBin_Master.GrUser_RowCommand(object, GridViewCommandEventArgs)', call System.IDisposable.Dispose on object 'dt' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Masters" File="frmBinMaster.aspx.cs" Line="115">In method 'frmBin_Master.Page_Load(object, EventArgs)', call System.IDisposable.Dispose on object 'ds' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Masters" File="frmBinMaster.aspx.cs" Line="112">In method 'frmBin_Master.Page_Load(object, EventArgs)', call System.IDisposable.Dispose on object 'dt' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Masters" File="frmBinMaster.aspx.cs" Line="114">In method 'frmBin_Master.Page_Load(object, EventArgs)', call System.IDisposable.Dispose on object 'dt_AscPlant' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Masters" File="frmBinMaster.aspx.cs" Line="113">In method 'frmBin_Master.Page_Load(object, EventArgs)', call System.IDisposable.Dispose on object 'dt_Plant' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="frmBooth_Master" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#ddlUserid_SelectedIndexChanged1(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Masters" File="frmBoothMaster.aspx.cs" Line="743">In method 'frmBooth_Master.ddlUserid_SelectedIndexChanged1(object, EventArgs)', call System.IDisposable.Dispose on object 'dt' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GrUser_RowCommand(System.Object,System.Web.UI.WebControls.GridViewCommandEventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Masters" File="frmBoothMaster.aspx.cs" Line="478">In method 'frmBooth_Master.GrUser_RowCommand(object, GridViewCommandEventArgs)', call System.IDisposable.Dispose on object 'dt' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Masters" File="frmBoothMaster.aspx.cs" Line="116">In method 'frmBooth_Master.Page_Load(object, EventArgs)', call System.IDisposable.Dispose on object 'ds' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Masters" File="frmBoothMaster.aspx.cs" Line="113">In method 'frmBooth_Master.Page_Load(object, EventArgs)', call System.IDisposable.Dispose on object 'dt' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Masters" File="frmBoothMaster.aspx.cs" Line="115">In method 'frmBooth_Master.Page_Load(object, EventArgs)', call System.IDisposable.Dispose on object 'dt_AscPlant' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Masters" File="frmBoothMaster.aspx.cs" Line="114">In method 'frmBooth_Master.Page_Load(object, EventArgs)', call System.IDisposable.Dispose on object 'dt_Plant' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Masters_frmPlantMasters" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#btnImp_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Masters" File="frmPlantMasters.aspx.cs" Line="413">In method 'Masters_frmPlantMasters.btnImp_Click(object, EventArgs)', call System.IDisposable.Dispose on object 'dt' before all references to it are out of scope.</Issue>
+            </Message>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Masters" File="frmPlantMasters.aspx.cs" Line="440">Object 'con' can be disposed more than once in method 'Masters_frmPlantMasters.btnImp_Click(object, EventArgs)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 440</Issue>
+             <Issue Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Masters" File="frmPlantMasters.aspx.cs" Line="403">Object 'excel_con' can be disposed more than once in method 'Masters_frmPlantMasters.btnImp_Click(object, EventArgs)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 403</Issue>
+            </Message>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Masters" File="frmPlantMasters.aspx.cs" Line="414">The query string passed to 'OleDbCommand.CommandText.set(string)' in 'Masters_frmPlantMasters.btnImp_Click(object, EventArgs)' could contain the following variables 'dtExcelSchema.Rows[0]["TABLE_NAME"]', 'SheetName'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GrPlant_RowCommand(System.Object,System.Web.UI.WebControls.GridViewCommandEventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Masters" File="frmPlantMasters.aspx.cs" Line="650">In method 'Masters_frmPlantMasters.GrPlant_RowCommand(object, GridViewCommandEventArgs)', call System.IDisposable.Dispose on object 'dt' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Masters_frmUserRole" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#GetDummyData()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="ExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Masters" File="frmUserRole.aspx.cs" Line="78">In method 'Masters_frmUserRole.GetDummyData()', object 'dt' is not disposed along all exception paths. Call System.IDisposable.Dispose on object 'dt' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GrUserRole_RowCommand(System.Object,System.Web.UI.WebControls.GridViewCommandEventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Masters" File="frmUserRole.aspx.cs" Line="278">In method 'Masters_frmUserRole.GrUserRole_RowCommand(object, GridViewCommandEventArgs)', call System.IDisposable.Dispose on object 'dt' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+  <Target Name="C:\Users\Dev5\AppData\Local\Temp\tmpCFD7.tmp.cadir\bin\App_Web_n13er1fu.dll">
+   <Modules>
+    <Module Name="app_web_n13er1fu.dll">
+     <Namespaces>
+      <Namespace Name="">
+       <Types>
+        <Type Name="frmGrn_Printing" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#btnGet_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Transactions" File="frmSampleReprinting.aspx.cs" Line="177">In method 'frmGrn_Printing.btnGet_Click(object, EventArgs)', call System.IDisposable.Dispose on object 'dtGrn' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#btnPrint_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Transactions" File="frmSampleReprinting.aspx.cs" Line="228">In method 'frmGrn_Printing.btnPrint_Click(object, EventArgs)', call System.IDisposable.Dispose on object 'dt' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Transactions" File="frmSampleReprinting.aspx.cs" Line="222">In method 'frmGrn_Printing.btnPrint_Click(object, EventArgs)', call System.IDisposable.Dispose on object 'dtPRint' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetARNo(System.String,System.Int32,System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Transactions" File="frmSampleReprinting.aspx.cs" Line="26">In method 'frmGrn_Printing.GetARNo(string, int, string)', call System.IDisposable.Dispose on object 'dt' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Transactions" File="frmSampleReprinting.aspx.cs" Line="145">In method 'frmGrn_Printing.Page_Load(object, EventArgs)', call System.IDisposable.Dispose on object 'ds' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Transactions" File="frmSampleReprinting.aspx.cs" Line="142">In method 'frmGrn_Printing.Page_Load(object, EventArgs)', call System.IDisposable.Dispose on object 'dt' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Transactions" File="frmSampleReprinting.aspx.cs" Line="144">In method 'frmGrn_Printing.Page_Load(object, EventArgs)', call System.IDisposable.Dispose on object 'dt_AscPlant' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Transactions" File="frmSampleReprinting.aspx.cs" Line="143">In method 'frmGrn_Printing.Page_Load(object, EventArgs)', call System.IDisposable.Dispose on object 'dt_Plant' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+  <Target Name="C:\Users\Dev5\AppData\Local\Temp\tmpCFD7.tmp.cadir\bin\App_Web_qe4naizv.dll">
+   <Modules>
+    <Module Name="app_web_qe4naizv.dll">
+     <Namespaces>
+      <Namespace Name="">
+       <Types>
+        <Type Name="frmGrn_Printing" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#btnConfirm_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Transactions" File="frrDispensingConfirmation.aspx.cs" Line="192">In method 'frmGrn_Printing.btnConfirm_Click(object, EventArgs)', call System.IDisposable.Dispose on object 'dtPRint' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#btnGet_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Transactions" File="frrDispensingConfirmation.aspx.cs" Line="145">In method 'frmGrn_Printing.btnGet_Click(object, EventArgs)', call System.IDisposable.Dispose on object 'dtGrn' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Transactions" File="frrDispensingConfirmation.aspx.cs" Line="114">In method 'frmGrn_Printing.Page_Load(object, EventArgs)', call System.IDisposable.Dispose on object 'ds' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Transactions" File="frrDispensingConfirmation.aspx.cs" Line="111">In method 'frmGrn_Printing.Page_Load(object, EventArgs)', call System.IDisposable.Dispose on object 'dt' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Transactions" File="frrDispensingConfirmation.aspx.cs" Line="113">In method 'frmGrn_Printing.Page_Load(object, EventArgs)', call System.IDisposable.Dispose on object 'dt_AscPlant' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Transactions" File="frrDispensingConfirmation.aspx.cs" Line="112">In method 'frmGrn_Printing.Page_Load(object, EventArgs)', call System.IDisposable.Dispose on object 'dt_Plant' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+  <Target Name="C:\Users\Dev5\AppData\Local\Temp\tmpCFD7.tmp.cadir\bin\App_Web_r24hmuly.dll">
+   <Modules>
+    <Module Name="app_web_r24hmuly.dll">
+     <Namespaces>
+      <Namespace Name="">
+       <Types>
+        <Type Name="frmGrn_Printing" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#btnGet_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Transactions" File="frmSamplePrinting.aspx.cs" Line="176">In method 'frmGrn_Printing.btnGet_Click(object, EventArgs)', call System.IDisposable.Dispose on object 'dtGrn' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#btnPrint_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Transactions" File="frmSamplePrinting.aspx.cs" Line="231">In method 'frmGrn_Printing.btnPrint_Click(object, EventArgs)', call System.IDisposable.Dispose on object 'dt' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Transactions" File="frmSamplePrinting.aspx.cs" Line="225">In method 'frmGrn_Printing.btnPrint_Click(object, EventArgs)', call System.IDisposable.Dispose on object 'dtPRint' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetARNo(System.String,System.Int32,System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Transactions" File="frmSamplePrinting.aspx.cs" Line="26">In method 'frmGrn_Printing.GetARNo(string, int, string)', call System.IDisposable.Dispose on object 'dt' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Transactions" File="frmSamplePrinting.aspx.cs" Line="144">In method 'frmGrn_Printing.Page_Load(object, EventArgs)', call System.IDisposable.Dispose on object 'ds' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Transactions" File="frmSamplePrinting.aspx.cs" Line="141">In method 'frmGrn_Printing.Page_Load(object, EventArgs)', call System.IDisposable.Dispose on object 'dt' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Transactions" File="frmSamplePrinting.aspx.cs" Line="143">In method 'frmGrn_Printing.Page_Load(object, EventArgs)', call System.IDisposable.Dispose on object 'dt_AscPlant' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Transactions" File="frmSamplePrinting.aspx.cs" Line="142">In method 'frmGrn_Printing.Page_Load(object, EventArgs)', call System.IDisposable.Dispose on object 'dt_Plant' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+  <Target Name="C:\Users\Dev5\AppData\Local\Temp\tmpCFD7.tmp.cadir\bin\App_Web_svs2jqsz.dll">
+   <Modules>
+    <Module Name="app_web_svs2jqsz.dll">
+     <Namespaces>
+      <Namespace Name="">
+       <Types>
+        <Type Name="frmGrn_Printing" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#btnGet_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Transactions" File="frmPalletLabelReprinting.aspx.cs" Line="146">In method 'frmGrn_Printing.btnGet_Click(object, EventArgs)', call System.IDisposable.Dispose on object 'dtGrn' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#btnPrint_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Transactions" File="frmPalletLabelReprinting.aspx.cs" Line="175">In method 'frmGrn_Printing.btnPrint_Click(object, EventArgs)', call System.IDisposable.Dispose on object 'dtPRint' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Transactions" File="frmPalletLabelReprinting.aspx.cs" Line="114">In method 'frmGrn_Printing.Page_Load(object, EventArgs)', call System.IDisposable.Dispose on object 'ds' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Transactions" File="frmPalletLabelReprinting.aspx.cs" Line="111">In method 'frmGrn_Printing.Page_Load(object, EventArgs)', call System.IDisposable.Dispose on object 'dt' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Transactions" File="frmPalletLabelReprinting.aspx.cs" Line="113">In method 'frmGrn_Printing.Page_Load(object, EventArgs)', call System.IDisposable.Dispose on object 'dt_AscPlant' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Transactions" File="frmPalletLabelReprinting.aspx.cs" Line="112">In method 'frmGrn_Printing.Page_Load(object, EventArgs)', call System.IDisposable.Dispose on object 'dt_Plant' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+  <Target Name="C:\Users\Dev5\AppData\Local\Temp\tmpCFD7.tmp.cadir\bin\App_Web_vxs2gbu2.dll">
+   <Modules>
+    <Module Name="app_web_vxs2gbu2.dll">
+     <Namespaces>
+      <Namespace Name="">
+       <Types>
+        <Type Name="frmUser_Master" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#btnImp_Click1(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Masters" File="frmUserMaster.aspx.cs" Line="1311">In method 'frmUser_Master.btnImp_Click1(object, EventArgs)', call System.IDisposable.Dispose on object 'dt' before all references to it are out of scope.</Issue>
+            </Message>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Masters" File="frmUserMaster.aspx.cs" Line="1338">Object 'con' can be disposed more than once in method 'frmUser_Master.btnImp_Click1(object, EventArgs)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 1338</Issue>
+             <Issue Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Masters" File="frmUserMaster.aspx.cs" Line="1301">Object 'excel_con' can be disposed more than once in method 'frmUser_Master.btnImp_Click1(object, EventArgs)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 1301</Issue>
+            </Message>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Masters" File="frmUserMaster.aspx.cs" Line="1312">The query string passed to 'OleDbCommand.CommandText.set(string)' in 'frmUser_Master.btnImp_Click1(object, EventArgs)' could contain the following variables 'dtExcelSchema.Rows[0]["TABLE_NAME"]', 'SheetName'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#btnImpRight_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Masters" File="frmUserMaster.aspx.cs" Line="1414">In method 'frmUser_Master.btnImpRight_Click(object, EventArgs)', call System.IDisposable.Dispose on object 'dt' before all references to it are out of scope.</Issue>
+            </Message>
+            <Message TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Masters" File="frmUserMaster.aspx.cs" Line="1441">Object 'con' can be disposed more than once in method 'frmUser_Master.btnImpRight_Click(object, EventArgs)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 1441</Issue>
+             <Issue Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Masters" File="frmUserMaster.aspx.cs" Line="1404">Object 'excel_con' can be disposed more than once in method 'frmUser_Master.btnImpRight_Click(object, EventArgs)'. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 1404</Issue>
+            </Message>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Masters" File="frmUserMaster.aspx.cs" Line="1415">The query string passed to 'OleDbCommand.CommandText.set(string)' in 'frmUser_Master.btnImpRight_Click(object, EventArgs)' could contain the following variables 'dtExcelSchema.Rows[0]["TABLE_NAME"]', 'SheetName'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ddlUserid_SelectedIndexChanged1(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Masters" File="frmUserMaster.aspx.cs" Line="783">In method 'frmUser_Master.ddlUserid_SelectedIndexChanged1(object, EventArgs)', call System.IDisposable.Dispose on object 'dt' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GrUser_RowCommand(System.Object,System.Web.UI.WebControls.GridViewCommandEventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Masters" File="frmUserMaster.aspx.cs" Line="551">In method 'frmUser_Master.GrUser_RowCommand(object, GridViewCommandEventArgs)', call System.IDisposable.Dispose on object 'dt' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Masters" File="frmUserMaster.aspx.cs" Line="116">In method 'frmUser_Master.Page_Load(object, EventArgs)', call System.IDisposable.Dispose on object 'ds' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Masters" File="frmUserMaster.aspx.cs" Line="113">In method 'frmUser_Master.Page_Load(object, EventArgs)', call System.IDisposable.Dispose on object 'dt' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Masters" File="frmUserMaster.aspx.cs" Line="115">In method 'frmUser_Master.Page_Load(object, EventArgs)', call System.IDisposable.Dispose on object 'dt_AscPlant' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Masters" File="frmUserMaster.aspx.cs" Line="114">In method 'frmUser_Master.Page_Load(object, EventArgs)', call System.IDisposable.Dispose on object 'dt_Plant' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+        <Type Name="Masters_frmWeigningMaster" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#GrPlant_RowCommand(System.Object,System.Web.UI.WebControls.GridViewCommandEventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Masters" File="frmWeigningMaster.aspx.cs" Line="269">In method 'Masters_frmWeigningMaster.GrPlant_RowCommand(object, GridViewCommandEventArgs)', call System.IDisposable.Dispose on object 'dt' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+  <Target Name="C:\Users\Dev5\AppData\Local\Temp\tmpCFD7.tmp.cadir\bin\App_Web_wbcrnf5d.dll">
+   <Modules>
+    <Module Name="app_web_wbcrnf5d.dll">
+     <Namespaces>
+      <Namespace Name="">
+       <Types>
+        <Type Name="frmGrn_Printing" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#btnGet_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Transactions" File="frmGrnRePrinting.aspx.cs" Line="177">In method 'frmGrn_Printing.btnGet_Click(object, EventArgs)', call System.IDisposable.Dispose on object 'dtGrn' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#btnPrint_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Transactions" File="frmGrnRePrinting.aspx.cs" Line="213">In method 'frmGrn_Printing.btnPrint_Click(object, EventArgs)', call System.IDisposable.Dispose on object 'dt' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Transactions" File="frmGrnRePrinting.aspx.cs" Line="207">In method 'frmGrn_Printing.btnPrint_Click(object, EventArgs)', call System.IDisposable.Dispose on object 'dtPRint' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#GetDocno(System.String,System.Int32,System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Transactions" File="frmGrnRePrinting.aspx.cs" Line="26">In method 'frmGrn_Printing.GetDocno(string, int, string)', call System.IDisposable.Dispose on object 'dt' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#Page_Load(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000" Status="Active" Created="2019-06-11 08:43:37Z" FixCategory="DependsOnFix">
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Transactions" File="frmGrnRePrinting.aspx.cs" Line="145">In method 'frmGrn_Printing.Page_Load(object, EventArgs)', call System.IDisposable.Dispose on object 'ds' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Transactions" File="frmGrnRePrinting.aspx.cs" Line="142">In method 'frmGrn_Printing.Page_Load(object, EventArgs)', call System.IDisposable.Dispose on object 'dt' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Transactions" File="frmGrnRePrinting.aspx.cs" Line="144">In method 'frmGrn_Printing.Page_Load(object, EventArgs)', call System.IDisposable.Dispose on object 'dt_AscPlant' before all references to it are out of scope.</Issue>
+             <Issue Name="NonExceptionEdge" Certainty="75" Level="Warning" Path="d:\Amar Projects\Developed\Achme\Acme_Generics_Web\Acme_Generics\Acme_Generics\Transactions" File="frmGrnRePrinting.aspx.cs" Line="143">In method 'frmGrn_Printing.Page_Load(object, EventArgs)', call System.IDisposable.Dispose on object 'dt_Plant' before all references to it are out of scope.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="Dispose objects before losing scope" Category="Microsoft.Reliability" CheckId="CA2000">
+   <Name>Dispose objects before losing scope</Name>
+   <Description>If a disposable object is not explicitly disposed before all references to it are out of scope, the object will be disposed at some indeterminate time when the garbage collector runs the finalizer of the object. Because an exceptional event might occur that will prevent the finalizer of the object from running, the object should be explicitly disposed instead.</Description>
+   <Resolution Name="ExceptionEdge">In method {0}, object {1} is not disposed along all exception paths. Call System.IDisposable.Dispose on object {1} before all references to it are out of scope.</Resolution>
+   <Resolution Name="NonExceptionEdge">In method {0}, call System.IDisposable.Dispose on object {1} before all references to it are out of scope.</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182289(VS.100).aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="Do not dispose objects multiple times" Category="Microsoft.Usage" CheckId="CA2202">
+   <Name>Do not dispose objects multiple times</Name>
+   <Description>A correctly implemented Dispose method can be called multiple times without throwing an exception. However, this is not guaranteed and to avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.</Description>
+   <Resolution Name="Default">Object {0} can be disposed more than once in method {1}. To avoid generating a System.ObjectDisposedException you should not call Dispose more than one time on an object.: Lines: 1441</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182334(VS.100).aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="DoNotIndirectlyExposeMethodsWithLinkDemands" Category="Microsoft.Security" CheckId="CA2122">
+   <Name>Do not indirectly expose methods with link demands</Name>
+   <Description>Do not wrap a method protected by a LinkDemand with a method that does not perform a security check. A LinkDemand checks the permissions of the immediate caller rather than checking the permissions of all callers in the call stack. In this case, the permissions of the wrapper method will be checked. If the wrapper method does not, itself, check the permissions of callers higher in the call stack, malicious code might be able to execute the wrapped function even though it lacks permission to do so.</Description>
+   <Resolution Name="Default">{0} calls into {1} which has a LinkDemand. By making this call, {1} is indirectly exposed to user code. Review the following call stack that might expose a way to circumvent security protection: {2}</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182303(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="33">CriticalError</MessageLevel>
+   <File Name="securityrules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060">
+   <Name>Move P/Invokes to NativeMethods class</Name>
+   <Description>This type contains members with the DllImport attribute. Members with the DllImport attribute should be contained in classes named NativeMethods, SafeNativeMethods, or UnsafeNativeMethods.</Description>
+   <Resolution Name="Default">Because it is a P/Invoke method, {0} should be defined in a class named NativeMethods, SafeNativeMethods, or UnsafeNativeMethods.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182161(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalWarning</MessageLevel>
+   <File Name="designrules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401">
+   <Name>P/Invokes should not be visible</Name>
+   <Description>Interop layer should not be public. The DllImport attribute should not be applied to publicly accessible members (public or protected).</Description>
+   <Resolution Name="Default">Change the accessibility of P/Invoke {0} so that it is no longer visible from outside its assembly.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182209(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="50">CriticalError</MessageLevel>
+   <File Name="interoperabilityrules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="RethrowToPreserveStackDetails" Category="Microsoft.Usage" CheckId="CA2200">
+   <Name>Rethrow to preserve stack details</Name>
+   <Description>Use the IL rethrow instruction to preserve original stack details when re-raising a caught exception.</Description>
+   <Resolution Name="Default">{0} rethrows a caught exception and specifies it explicitly as an argument. Use 'throw' without an argument instead, in order to preserve the stack location where the exception was initially raised.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182363(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="usagerules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100">
+   <Name>Review SQL queries for security vulnerabilities</Name>
+   <Description>A SQL command string built from user input is vulnerable to SQL injection attacks. Microsoft SQL Server and other database servers support stored procedures and parameterized SQL queries, which reduce the risk of injection attacks.</Description>
+   <Resolution Name="WithNonLiterals">The query string passed to {0} in {1} could contain the following variables {2}. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Resolution>
+   <Owner>RuleOwner</Owner>
+   <Url>http://msdn.microsoft.com/library/ms182310(VS.100).aspx</Url>
+   <Email />
+   <MessageLevel Certainty="75">Warning</MessageLevel>
+   <File Name="dataflowrules.dll" Version="10.0.0.0" />
+  </Rule>
+  <Rule TypeName="SpecifyMarshalingForPInvokeStringArguments" Category="Microsoft.Globalization" CheckId="CA2101">
+   <Name>Specify marshaling for P/Invoke string arguments</Name>
+   <Description>When marshaling strings as ANSI (or as Auto on Win9x), some characters may be changed. If best-fit mapping is on, strings that appear different in Unicode will be marshaled to identical ANSI strings, which may lead to incorrect security decisions. Turning best-fit mapping off reduces this risk, as all characters without equivalents are mapped to '?'. Also, note that CharSet.Ansi is the default setting for all string marshaling; Unicode marshaling must be specified explicitly, either as a CharSet setting of DllImport or StructLayout, or as a MarshalAs attribute with a Unicode (or system-dependent) UnmanagedType.</Description>
+   <Resolution Name="ParameterImplicitAnsi">To reduce security risk, marshal parameter {0} as Unicode, by setting DllImport.CharSet to CharSet.Unicode, or by explicitly marshaling the parameter as UnmanagedType.LPWStr. If you need to marshal this string as ANSI or system-dependent, specify MarshalAs explicitly, and set BestFitMapping=false; for added security, also set ThrowOnUnmappableChar=true.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182319(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="75">Error</MessageLevel>
+   <File Name="globalizationrules.dll" Version="10.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">Category</String>
+  <String Key="Certainty">Certainty</String>
+  <String Key="CollapseAll">Collapse All</String>
+  <String Key="CheckId">Check Id</String>
+  <String Key="Error">Error</String>
+  <String Key="Errors">error(s)</String>
+  <String Key="ExpandAll">Expand All</String>
+  <String Key="Help">Help</String>
+  <String Key="Line">Line</String>
+  <String Key="Messages">message(s)</String>
+  <String Key="LocationNotStoredInPdb">[Location not stored in Pdb]</String>
+  <String Key="Project">Project</String>
+  <String Key="Resolution">Resolution</String>
+  <String Key="Rule">Rule</String>
+  <String Key="RuleFile">Rule File</String>
+  <String Key="RuleDescription">Rule Description</String>
+  <String Key="Source">Source</String>
+  <String Key="Status">Status</String>
+  <String Key="Target">Target</String>
+  <String Key="Warning">Warning</String>
+  <String Key="Warnings">warning(s)</String>
+  <String Key="ReportTitle">Code Analysis Report</String>
+ </Localized>
+</FxCopReport>
